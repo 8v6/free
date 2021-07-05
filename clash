@@ -7,6 +7,15 @@ external-controller: :9090
 proxies:
   - {name: Heroku-id6-vmess-digitalocean-Europe, server: www.digitalocean.com, port: 443, type: vmess, uuid: 8f91b6a0-e8ee-11ea-adc1-0242ac668866, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /8f91b6a0-e8ee-11ea-adc1-0242ac668866-vmess, ws-headers: {Host: id6.free8id.workers.dev}}
   - {name: Heroku-vv8-vmess-gov-Europe, server: www.gov.hk, port: 443, type: vmess, uuid: 758804b7-75d4-449a-9259-032a55c806f6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /758804b7-75d4-449a-9259-032a55c806f6-vmess, ws-headers: {Host: vv8.8v6.workers.dev}}
+  - {name: 🇨🇳 Lv1 台湾 A | Netflix, server: hinet.rdns.link, port: 50021, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
+  - {name: 🇨🇳 Lv1 台湾 B | Netflix, server: hinet.rdns.link, port: 50022, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
+  - {name: 🇨🇳 Lv1 台湾 C | Netflix, server: hinet.rdns.link, port: 50023, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
+  - {name: 🇨🇳 Lv1 台湾 D | Netflix, server: hinet.rdns.link, port: 50024, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
+  - {name: 🇨🇳 Lv1 台湾 E | Netflix, server: hinet.rdns.link, port: 50025, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
+  - {name: 🇨🇳 Lv1 台湾 F | Netflix, server: hinet.rdns.link, port: 50026, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
+  - {name: 🇨🇳 Lv1 台湾 G | Netflix, server: hinet.rdns.link, port: 50027, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
+  - {name: 🇨🇳 Lv1 台湾 H | Netflix, server: hinet.rdns.link, port: 50028, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
+  - {name: 🇨🇳 Lv1 台湾 I | Netflix, server: hinet.rdns.link, port: 50029, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
   - {name: 🇩🇪 德鸡J3-trojan, server: j3.v001.gq, port: 443, type: trojan, password: c31bbdb6-f40a-494c-b755-796cabe2acb2, sni: j3.v001.gq, skip-cert-verify: false}
   - {name: 🇩🇪 德鸡J3-vmess-ws, server: j3.v001.gq, port: 443, type: vmess, uuid: c31bbdb6-f40a-494c-b755-796cabe2acb2, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/j3vws?ed=2048", ws-headers: {Host: j3.v001.gq}}
   - {name: 🇩🇪 德鸡j2-vmess-ws, server: j2.v001.gq, port: 443, type: vmess, uuid: 12206508-3693-4c70-ab4e-730597d45167, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/j2vws?ed=2048", ws-headers: {Host: j2.v001.gq}}
@@ -50,6 +59,15 @@ proxy-groups:
     proxies:
       - Heroku-id6-vmess-digitalocean-Europe
       - Heroku-vv8-vmess-gov-Europe
+      - 🇨🇳 Lv1 台湾 A | Netflix
+      - 🇨🇳 Lv1 台湾 B | Netflix
+      - 🇨🇳 Lv1 台湾 C | Netflix
+      - 🇨🇳 Lv1 台湾 D | Netflix
+      - 🇨🇳 Lv1 台湾 E | Netflix
+      - 🇨🇳 Lv1 台湾 F | Netflix
+      - 🇨🇳 Lv1 台湾 G | Netflix
+      - 🇨🇳 Lv1 台湾 H | Netflix
+      - 🇨🇳 Lv1 台湾 I | Netflix
       - 🇩🇪 德鸡J3-trojan
       - 🇩🇪 德鸡J3-vmess-ws
       - 🇩🇪 德鸡j2-vmess-ws
@@ -81,6 +99,15 @@ proxy-groups:
     proxies:
       - Heroku-id6-vmess-digitalocean-Europe
       - Heroku-vv8-vmess-gov-Europe
+      - 🇨🇳 Lv1 台湾 A | Netflix
+      - 🇨🇳 Lv1 台湾 B | Netflix
+      - 🇨🇳 Lv1 台湾 C | Netflix
+      - 🇨🇳 Lv1 台湾 D | Netflix
+      - 🇨🇳 Lv1 台湾 E | Netflix
+      - 🇨🇳 Lv1 台湾 F | Netflix
+      - 🇨🇳 Lv1 台湾 G | Netflix
+      - 🇨🇳 Lv1 台湾 H | Netflix
+      - 🇨🇳 Lv1 台湾 I | Netflix
       - 🇩🇪 德鸡J3-trojan
       - 🇩🇪 德鸡J3-vmess-ws
       - 🇩🇪 德鸡j2-vmess-ws
@@ -306,7 +333,15 @@ proxy-groups:
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - DIRECT
+      - 🇨🇳 Lv1 台湾 A | Netflix
+      - 🇨🇳 Lv1 台湾 B | Netflix
+      - 🇨🇳 Lv1 台湾 C | Netflix
+      - 🇨🇳 Lv1 台湾 D | Netflix
+      - 🇨🇳 Lv1 台湾 E | Netflix
+      - 🇨🇳 Lv1 台湾 F | Netflix
+      - 🇨🇳 Lv1 台湾 G | Netflix
+      - 🇨🇳 Lv1 台湾 H | Netflix
+      - 🇨🇳 Lv1 台湾 I | Netflix
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
@@ -320,7 +355,15 @@ proxy-groups:
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - DIRECT
+      - 🇨🇳 Lv1 台湾 A | Netflix
+      - 🇨🇳 Lv1 台湾 B | Netflix
+      - 🇨🇳 Lv1 台湾 C | Netflix
+      - 🇨🇳 Lv1 台湾 D | Netflix
+      - 🇨🇳 Lv1 台湾 E | Netflix
+      - 🇨🇳 Lv1 台湾 F | Netflix
+      - 🇨🇳 Lv1 台湾 G | Netflix
+      - 🇨🇳 Lv1 台湾 H | Netflix
+      - 🇨🇳 Lv1 台湾 I | Netflix
   - name: 🔑 专用线路
     type: select
     proxies:
