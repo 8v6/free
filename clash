@@ -5,8 +5,33 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Heroku-id6-vmess-digitalocean-Europe, server: www.digitalocean.com, port: 443, type: vmess, uuid: 8f91b6a0-e8ee-11ea-adc1-0242ac668866, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /8f91b6a0-e8ee-11ea-adc1-0242ac668866-vmess, ws-headers: {Host: id6.free8id.workers.dev}}
-  - {name: Heroku-vv8-vmess-gov-Europe, server: www.gov.hk, port: 443, type: vmess, uuid: 758804b7-75d4-449a-9259-032a55c806f6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /758804b7-75d4-449a-9259-032a55c806f6-vmess, ws-headers: {Host: vv8.8v6.workers.dev}}
+  - {name: 🇰🇷 首尔v-vmess-ws, server: v.free8.ga, port: 33861, type: vmess, uuid: 4ec4eae3-4724-421e-832b-6fc018be2144, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /v, ws-headers: {Host: v.free8.ga}}
+  - {name: 🇰🇷 首尔v-trojan, server: v.free8.ga, port: 34658, type: trojan, password: DzoBy35jKy, sni: v.free8.ga}
+  - {name: 🇰🇷 首尔v1-vmess-ws, server: v1.free8.ga, port: 443, type: vmess, uuid: 24551509-260d-4046-ba34-16b323ee7194, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: "/v1vws?ed=2048", ws-headers: {Host: v1.free8.ga}}
+  - {name: 🇰🇷 首尔v1-vmess, server: v1.free8.ga, port: 443, type: vmess, uuid: 24551509-260d-4046-ba34-16b323ee7194, alterId: 1, cipher: auto, tls: true}
+  - {name: 🇰🇷 首尔v1-trojan, server: v1.free8.ga, port: 443, type: trojan, password: 24551509-260d-4046-ba34-16b323ee7194, sni: v1.free8.ga}
+  - {name: 🇰🇷 首尔a1-vmess-ws, server: a1.free8.ga, port: 54321, type: vmess, uuid: f0727f89-4b73-4659-f1f4-4bfbb8c0b8e8, alterId: 64, cipher: auto, tls: false, network: ws, ws-path: /a1, ws-headers: {Host: a1.free8.ga}}
+  - {name: 🇰🇷 首尔a1-trojan, server: a1.free8.ga, port: 54322, type: trojan, password: HkYHmXZOHf, sni: a1.free8.ga}
+  - {name: 🇺🇸 凤凰城v3-vmess, server: v3.free8.ga, port: 54323, type: vmess, uuid: 6ab48001-60d1-4ebb-f029-dbacb8e71480, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 凤凰城v3-trojan, server: v3.free8.ga, port: 54322, type: trojan, password: JNgDHsDjYY, sni: v3.free8.ga}
+  - {name: 🇺🇸 凤凰城v2-vmess-icook, server: icook.tw, port: 443, type: vmess, uuid: df093d0c-ae47-43d2-81e7-adb28773fa4b, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: "/v2vws?ed=2048", ws-headers: {Host: v2.free8.ga}}
+  - {name: 🇺🇸 凤凰城v2-vmess, server: v2.free8.ga, port: 443, type: vmess, uuid: df093d0c-ae47-43d2-81e7-adb28773fa4b, alterId: 1, cipher: auto, tls: true}
+  - {name: 🇺🇸 凤凰城v2-trojan, server: v2.free8.ga, port: 443, type: trojan, password: df093d0c-ae47-43d2-81e7-adb28773fa4b, sni: v2.free8.ga}
+  - {name: 🇺🇸 凤凰城a4-vmess-ws, server: icook.tw, port: 443, type: vmess, uuid: 19947749-3db4-4487-844b-4c3343061a42, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/a4vws?ed=2048", ws-headers: {Host: a4.free8.ga}}
+  - {name: 🇺🇸 凤凰城a4-trojan, server: a4.free8.ga, port: 443, type: trojan, password: 19947749-3db4-4487-844b-4c3343061a42, sni: a4.free8.ga}
+  - {name: 🇺🇸 凤凰城a3-vmess-digitalocean, server: www.digitalocean.com, port: 443, type: vmess, uuid: beed2e7f-9108-40f2-9616-66fab7489a15, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: "/a3vws?ed=2048", ws-headers: {Host: a3.free8.ga}}
+  - {name: 🇺🇸 凤凰城a3-trojan-ws, server: a3.free8.ga, port: 443, type: trojan, password: beed2e7f-9108-40f2-9616-66fab7489a15, sni: a3.free8.ga}
+  - {name: 🇺🇸 凤凰城a3-trojan-digitalocean, server: www.digitalocean.com, port: 443, type: trojan, password: beed2e7f-9108-40f2-9616-66fab7489a15, sni: www.digitalocean.com}
+  - {name: 🇩🇪 德鸡xm-vmess-ws, server: icook.tw, port: 443, type: vmess, uuid: b53e8ffe-4e0d-49d7-9f01-d074e105f75c, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/xmvws?ed=2048", ws-headers: {Host: xm.v001.gq}}
+  - {name: 🇩🇪 德鸡J3-vmess-ws, server: icook.tw, port: 443, type: vmess, uuid: c31bbdb6-f40a-494c-b755-796cabe2acb2, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/j3vws?ed=2048", ws-headers: {Host: j3.v001.gq}}
+  - {name: 🇩🇪 德鸡J3-trojan, server: j3.v001.gq, port: 443, type: trojan, password: c31bbdb6-f40a-494c-b755-796cabe2acb2, sni: j3.v001.gq}
+  - {name: 🇩🇪 德鸡j2-vmess-ws, server: icook.tw, port: 443, type: vmess, uuid: 12206508-3693-4c70-ab4e-730597d45167, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/j2vws?ed=2048", ws-headers: {Host: j2.v001.gq}}
+  - {name: 🇩🇪 德鸡j2-vmess-digitalocean, server: www.digitalocean.com, port: 443, type: vmess, uuid: 12206508-3693-4c70-ab4e-730597d45167, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/j2vws?ed=2048", ws-headers: {Host: j2.v001.gq}}
+  - {name: Heroku-vv8-vmess-gov-Europe, server: www.gov.hk, port: 443, type: vmess, uuid: 758804b7-75d4-449a-9259-032a55c806f6, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /758804b7-75d4-449a-9259-032a55c806f6-vmess, ws-headers: {Host: vv8.8v6.workers.dev}}
+  - {name: 🇺🇸 Heroku-vv6-vmess-icook-us, server: www.gov.hk, port: 443, type: vmess, uuid: 1a16e2fd-8601-4f13-a7a1-11c4b9e8e699, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /1a16e2fd-8601-4f13-a7a1-11c4b9e8e699-vmess, ws-headers: {Host: vv6.8v6.workers.dev}}
+  - {name: 🇺🇸 Heroku-id8-vmess-icook-us, server: icook.tw, port: 443, type: vmess, uuid: 8f91b6a0-e8ee-11ea-adc1-0242ac886688, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /8f91b6a0-e8ee-11ea-adc1-0242ac886688-vmess, ws-headers: {Host: id8.free8id.workers.dev}}
+  - {name: Heroku-id6-vmess-digitalocean-Europe, server: www.digitalocean.com, port: 443, type: vmess, uuid: 8f91b6a0-e8ee-11ea-adc1-0242ac668866, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /8f91b6a0-e8ee-11ea-adc1-0242ac668866-vmess, ws-headers: {Host: id6.free8id.workers.dev}}
+  - {name: "[奈飞小铺]naifei.id", server: cloudflare.com, port: 10086, type: ss, cipher: chacha20-ietf, password: RlHkXn}
   - {name: 🇨🇳 Lv1 台湾 A | Netflix, server: hinet.rdns.link, port: 50021, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
   - {name: 🇨🇳 Lv1 台湾 B | Netflix, server: hinet.rdns.link, port: 50022, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
   - {name: 🇨🇳 Lv1 台湾 C | Netflix, server: hinet.rdns.link, port: 50023, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
@@ -16,30 +41,6 @@ proxies:
   - {name: 🇨🇳 Lv1 台湾 G | Netflix, server: hinet.rdns.link, port: 50027, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
   - {name: 🇨🇳 Lv1 台湾 H | Netflix, server: hinet.rdns.link, port: 50028, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
   - {name: 🇨🇳 Lv1 台湾 I | Netflix, server: hinet.rdns.link, port: 50029, type: ssr, cipher: aes-256-cfb, password: Getfree.Cloud, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 14765:RlHkXn, obfs-param: 9f42414765.software-download.microsoft.com}
-  - {name: 🇩🇪 德鸡J3-trojan, server: j3.v001.gq, port: 443, type: trojan, password: c31bbdb6-f40a-494c-b755-796cabe2acb2, sni: j3.v001.gq, skip-cert-verify: false}
-  - {name: 🇩🇪 德鸡J3-vmess-ws, server: j3.v001.gq, port: 443, type: vmess, uuid: c31bbdb6-f40a-494c-b755-796cabe2acb2, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/j3vws?ed=2048", ws-headers: {Host: j3.v001.gq}}
-  - {name: 🇩🇪 德鸡j2-vmess-ws, server: j2.v001.gq, port: 443, type: vmess, uuid: 12206508-3693-4c70-ab4e-730597d45167, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/j2vws?ed=2048", ws-headers: {Host: j2.v001.gq}}
-  - {name: 🇩🇪 德鸡xm-vmess-ws, server: domain08.mqcjuc.ml, port: 443, type: vmess, uuid: b53e8ffe-4e0d-49d7-9f01-d074e105f75c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/xmvws?ed=2048", ws-headers: {Host: xm.v001.gq}}
-  - {name: 🇩🇪 德鸡yj-trojan, server: yj.v001.gq, port: 443, type: trojan, password: 22914bf1-55bc-424e-a2ef-52b9609a8481, sni: yj.v001.gq, skip-cert-verify: false}
-  - {name: 🇩🇪 德鸡yj-vmess-ws, server: domain08.mqcjuc.ml, port: 443, type: vmess, uuid: 22914bf1-55bc-424e-a2ef-52b9609a8481, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/yjvws?ed=2048", ws-headers: {Host: yj.v001.gq}}
-  - {name: 🇰🇷 首尔a1-trojan, server: a1.free8.ga, port: 54322, type: trojan, password: HkYHmXZOHf, sni: a1.free8.ga, skip-cert-verify: false}
-  - {name: 🇰🇷 首尔a1-vmess-ws, server: a1.free8.ga, port: 54321, type: vmess, uuid: f0727f89-4b73-4659-f1f4-4bfbb8c0b8e8, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /a1, ws-headers: {Host: a1.free8.ga}}
-  - {name: 🇰🇷 首尔v-trojan, server: v.free8.ga, port: 34658, type: trojan, password: DzoBy35jKy, sni: v.free8.ga, skip-cert-verify: false}
-  - {name: 🇰🇷 首尔v-vmess-ws, server: v.free8.ga, port: 33861, type: vmess, uuid: 4ec4eae3-4724-421e-832b-6fc018be2144, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v, ws-headers: {Host: v.free8.ga}}
-  - {name: 🇰🇷 首尔v1-trojan, server: v1.free8.ga, port: 443, type: trojan, password: 24551509-260d-4046-ba34-16b323ee7194, sni: v1.free8.ga, skip-cert-verify: false}
-  - {name: 🇰🇷 首尔v1-vmess, server: v1.free8.ga, port: 443, type: vmess, uuid: 24551509-260d-4046-ba34-16b323ee7194, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇰🇷 首尔v1-vmess-ws, server: v1.free8.ga, port: 443, type: vmess, uuid: 24551509-260d-4046-ba34-16b323ee7194, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/v1vws?ed=2048", ws-headers: {Host: v1.free8.ga}}
-  - {name: 🇺🇸 Heroku-id8-vmess-icook-us, server: icook.tw, port: 443, type: vmess, uuid: 8f91b6a0-e8ee-11ea-adc1-0242ac886688, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /8f91b6a0-e8ee-11ea-adc1-0242ac886688-vmess, ws-headers: {Host: id8.free8id.workers.dev}}
-  - {name: 🇺🇸 Heroku-vv6-vmess-icook-us, server: www.gov.hk, port: 443, type: vmess, uuid: 1a16e2fd-8601-4f13-a7a1-11c4b9e8e699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /1a16e2fd-8601-4f13-a7a1-11c4b9e8e699-vmess, ws-headers: {Host: vv6.8v6.workers.dev}}
-  - {name: 🇺🇸 凤凰城a3-trojan-ws, server: a3.free8.ga, port: 443, type: trojan, password: beed2e7f-9108-40f2-9616-66fab7489a15, sni: a3.free8.ga, skip-cert-verify: false}
-  - {name: 🇺🇸 凤凰城a3-vmess-digitalocean, server: www.digitalocean.com, port: 443, type: vmess, uuid: beed2e7f-9108-40f2-9616-66fab7489a15, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/a3vws?ed=2048", ws-headers: {Host: a3.free8.ga}}
-  - {name: 🇺🇸 凤凰城a4-trojan, server: a4.free8.ga, port: 443, type: trojan, password: 19947749-3db4-4487-844b-4c3343061a42, sni: a4.free8.ga, skip-cert-verify: false}
-  - {name: 🇺🇸 凤凰城a4-vmess-ws, server: icook.tw, port: 443, type: vmess, uuid: 19947749-3db4-4487-844b-4c3343061a42, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/a4vws?ed=2048", ws-headers: {Host: a4.free8.ga}}
-  - {name: 🇺🇸 凤凰城v2-trojan, server: v2.free8.ga, port: 443, type: trojan, password: df093d0c-ae47-43d2-81e7-adb28773fa4b, sni: v2.free8.ga, skip-cert-verify: false}
-  - {name: 🇺🇸 凤凰城v2-vmess, server: v2.free8.ga, port: 443, type: vmess, uuid: df093d0c-ae47-43d2-81e7-adb28773fa4b, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇺🇸 凤凰城v2-vmess-icook, server: icook.tw, port: 443, type: vmess, uuid: df093d0c-ae47-43d2-81e7-adb28773fa4b, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/v2vws?ed=2048", ws-headers: {Host: v2.free8.ga}}
-  - {name: 🇺🇸 凤凰城v3-trojan, server: v3.free8.ga, port: 54322, type: trojan, password: JNgDHsDjYY, sni: v3.free8.ga, skip-cert-verify: false}
-  - {name: 🇺🇸 凤凰城v3-vmess, server: v3.free8.ga, port: 54323, type: vmess, uuid: 6ab48001-60d1-4ebb-f029-dbacb8e71480, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 全局设置
     type: select
@@ -57,8 +58,33 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     proxies:
-      - Heroku-id6-vmess-digitalocean-Europe
+      - 🇰🇷 首尔v-vmess-ws
+      - 🇰🇷 首尔v-trojan
+      - 🇰🇷 首尔v1-vmess-ws
+      - 🇰🇷 首尔v1-vmess
+      - 🇰🇷 首尔v1-trojan
+      - 🇰🇷 首尔a1-vmess-ws
+      - 🇰🇷 首尔a1-trojan
+      - 🇺🇸 凤凰城v3-vmess
+      - 🇺🇸 凤凰城v3-trojan
+      - 🇺🇸 凤凰城v2-vmess-icook
+      - 🇺🇸 凤凰城v2-vmess
+      - 🇺🇸 凤凰城v2-trojan
+      - 🇺🇸 凤凰城a4-vmess-ws
+      - 🇺🇸 凤凰城a4-trojan
+      - 🇺🇸 凤凰城a3-vmess-digitalocean
+      - 🇺🇸 凤凰城a3-trojan-ws
+      - 🇺🇸 凤凰城a3-trojan-digitalocean
+      - 🇩🇪 德鸡xm-vmess-ws
+      - 🇩🇪 德鸡J3-vmess-ws
+      - 🇩🇪 德鸡J3-trojan
+      - 🇩🇪 德鸡j2-vmess-ws
+      - 🇩🇪 德鸡j2-vmess-digitalocean
       - Heroku-vv8-vmess-gov-Europe
+      - 🇺🇸 Heroku-vv6-vmess-icook-us
+      - 🇺🇸 Heroku-id8-vmess-icook-us
+      - Heroku-id6-vmess-digitalocean-Europe
+      - "[奈飞小铺]naifei.id"
       - 🇨🇳 Lv1 台湾 A | Netflix
       - 🇨🇳 Lv1 台湾 B | Netflix
       - 🇨🇳 Lv1 台湾 C | Netflix
@@ -68,37 +94,38 @@ proxy-groups:
       - 🇨🇳 Lv1 台湾 G | Netflix
       - 🇨🇳 Lv1 台湾 H | Netflix
       - 🇨🇳 Lv1 台湾 I | Netflix
-      - 🇩🇪 德鸡J3-trojan
-      - 🇩🇪 德鸡J3-vmess-ws
-      - 🇩🇪 德鸡j2-vmess-ws
-      - 🇩🇪 德鸡xm-vmess-ws
-      - 🇩🇪 德鸡yj-trojan
-      - 🇩🇪 德鸡yj-vmess-ws
-      - 🇰🇷 首尔a1-trojan
-      - 🇰🇷 首尔a1-vmess-ws
-      - 🇰🇷 首尔v-trojan
-      - 🇰🇷 首尔v-vmess-ws
-      - 🇰🇷 首尔v1-trojan
-      - 🇰🇷 首尔v1-vmess
-      - 🇰🇷 首尔v1-vmess-ws
-      - 🇺🇸 Heroku-id8-vmess-icook-us
-      - 🇺🇸 Heroku-vv6-vmess-icook-us
-      - 🇺🇸 凤凰城a3-trojan-ws
-      - 🇺🇸 凤凰城a3-vmess-digitalocean
-      - 🇺🇸 凤凰城a4-trojan
-      - 🇺🇸 凤凰城a4-vmess-ws
-      - 🇺🇸 凤凰城v2-trojan
-      - 🇺🇸 凤凰城v2-vmess
-      - 🇺🇸 凤凰城v2-vmess-icook
-      - 🇺🇸 凤凰城v3-trojan
-      - 🇺🇸 凤凰城v3-vmess
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Heroku-id6-vmess-digitalocean-Europe
+      - 🇰🇷 首尔v-vmess-ws
+      - 🇰🇷 首尔v-trojan
+      - 🇰🇷 首尔v1-vmess-ws
+      - 🇰🇷 首尔v1-vmess
+      - 🇰🇷 首尔v1-trojan
+      - 🇰🇷 首尔a1-vmess-ws
+      - 🇰🇷 首尔a1-trojan
+      - 🇺🇸 凤凰城v3-vmess
+      - 🇺🇸 凤凰城v3-trojan
+      - 🇺🇸 凤凰城v2-vmess-icook
+      - 🇺🇸 凤凰城v2-vmess
+      - 🇺🇸 凤凰城v2-trojan
+      - 🇺🇸 凤凰城a4-vmess-ws
+      - 🇺🇸 凤凰城a4-trojan
+      - 🇺🇸 凤凰城a3-vmess-digitalocean
+      - 🇺🇸 凤凰城a3-trojan-ws
+      - 🇺🇸 凤凰城a3-trojan-digitalocean
+      - 🇩🇪 德鸡xm-vmess-ws
+      - 🇩🇪 德鸡J3-vmess-ws
+      - 🇩🇪 德鸡J3-trojan
+      - 🇩🇪 德鸡j2-vmess-ws
+      - 🇩🇪 德鸡j2-vmess-digitalocean
       - Heroku-vv8-vmess-gov-Europe
+      - 🇺🇸 Heroku-vv6-vmess-icook-us
+      - 🇺🇸 Heroku-id8-vmess-icook-us
+      - Heroku-id6-vmess-digitalocean-Europe
+      - "[奈飞小铺]naifei.id"
       - 🇨🇳 Lv1 台湾 A | Netflix
       - 🇨🇳 Lv1 台湾 B | Netflix
       - 🇨🇳 Lv1 台湾 C | Netflix
@@ -108,30 +135,6 @@ proxy-groups:
       - 🇨🇳 Lv1 台湾 G | Netflix
       - 🇨🇳 Lv1 台湾 H | Netflix
       - 🇨🇳 Lv1 台湾 I | Netflix
-      - 🇩🇪 德鸡J3-trojan
-      - 🇩🇪 德鸡J3-vmess-ws
-      - 🇩🇪 德鸡j2-vmess-ws
-      - 🇩🇪 德鸡xm-vmess-ws
-      - 🇩🇪 德鸡yj-trojan
-      - 🇩🇪 德鸡yj-vmess-ws
-      - 🇰🇷 首尔a1-trojan
-      - 🇰🇷 首尔a1-vmess-ws
-      - 🇰🇷 首尔v-trojan
-      - 🇰🇷 首尔v-vmess-ws
-      - 🇰🇷 首尔v1-trojan
-      - 🇰🇷 首尔v1-vmess
-      - 🇰🇷 首尔v1-vmess-ws
-      - 🇺🇸 Heroku-id8-vmess-icook-us
-      - 🇺🇸 Heroku-vv6-vmess-icook-us
-      - 🇺🇸 凤凰城a3-trojan-ws
-      - 🇺🇸 凤凰城a3-vmess-digitalocean
-      - 🇺🇸 凤凰城a4-trojan
-      - 🇺🇸 凤凰城a4-vmess-ws
-      - 🇺🇸 凤凰城v2-trojan
-      - 🇺🇸 凤凰城v2-vmess
-      - 🇺🇸 凤凰城v2-vmess-icook
-      - 🇺🇸 凤凰城v3-trojan
-      - 🇺🇸 凤凰城v3-vmess
   - name: 🎯 国内网络
     type: select
     proxies:
@@ -317,15 +320,16 @@ proxy-groups:
   - name: 🇺🇲 美国节点
     type: select
     proxies:
-      - 🇺🇸 凤凰城a3-trojan-ws
-      - 🇺🇸 凤凰城a3-vmess-digitalocean
-      - 🇺🇸 凤凰城a4-trojan
-      - 🇺🇸 凤凰城a4-vmess-ws
-      - 🇺🇸 凤凰城v2-trojan
-      - 🇺🇸 凤凰城v2-vmess
-      - 🇺🇸 凤凰城v2-vmess-icook
-      - 🇺🇸 凤凰城v3-trojan
       - 🇺🇸 凤凰城v3-vmess
+      - 🇺🇸 凤凰城v3-trojan
+      - 🇺🇸 凤凰城v2-vmess-icook
+      - 🇺🇸 凤凰城v2-vmess
+      - 🇺🇸 凤凰城v2-trojan
+      - 🇺🇸 凤凰城a4-vmess-ws
+      - 🇺🇸 凤凰城a4-trojan
+      - 🇺🇸 凤凰城a3-vmess-digitalocean
+      - 🇺🇸 凤凰城a3-trojan-ws
+      - 🇺🇸 凤凰城a3-trojan-digitalocean
   - name: 🇸🇬 新加坡节点
     type: select
     proxies:
@@ -345,16 +349,17 @@ proxy-groups:
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
-      - 🇰🇷 首尔a1-trojan
-      - 🇰🇷 首尔a1-vmess-ws
-      - 🇰🇷 首尔v-trojan
       - 🇰🇷 首尔v-vmess-ws
-      - 🇰🇷 首尔v1-trojan
-      - 🇰🇷 首尔v1-vmess
+      - 🇰🇷 首尔v-trojan
       - 🇰🇷 首尔v1-vmess-ws
+      - 🇰🇷 首尔v1-vmess
+      - 🇰🇷 首尔v1-trojan
+      - 🇰🇷 首尔a1-vmess-ws
+      - 🇰🇷 首尔a1-trojan
   - name: 🎥 奈飞节点
     type: select
     proxies:
+      - "[奈飞小铺]naifei.id"
       - 🇨🇳 Lv1 台湾 A | Netflix
       - 🇨🇳 Lv1 台湾 B | Netflix
       - 🇨🇳 Lv1 台湾 C | Netflix
