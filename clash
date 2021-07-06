@@ -22,6 +22,8 @@ proxies:
   - {name: 🇺🇸 凤凰城a3-vmess-digitalocean, server: www.digitalocean.com, port: 443, type: vmess, uuid: beed2e7f-9108-40f2-9616-66fab7489a15, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: "/a3vws?ed=2048", ws-headers: {Host: a3.free8.ga}}
   - {name: 🇺🇸 凤凰城a3-trojan-ws, server: a3.free8.ga, port: 443, type: trojan, password: beed2e7f-9108-40f2-9616-66fab7489a15, sni: a3.free8.ga}
   - {name: 🇺🇸 凤凰城a3-trojan-digitalocean, server: www.digitalocean.com, port: 443, type: trojan, password: beed2e7f-9108-40f2-9616-66fab7489a15, sni: www.digitalocean.com}
+  - {name: 🇩🇪 德鸡yj-vmess-hostmonit, server: hostmonit.com, port: 443, type: vmess, uuid: 699bfdc7-3897-4bd8-8cb7-7153ff658dc1, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/yjvws?ed=2048", ws-headers: {Host: yj.v001.gq}}
+  - {name: 🇩🇪 德鸡yj-vmess-digitalocean, server: www.digitalocean.com, port: 443, type: vmess, uuid: 699bfdc7-3897-4bd8-8cb7-7153ff658dc1, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/yjvws?ed=2048", ws-headers: {Host: yj.v001.gq}}
   - {name: 🇩🇪 德鸡xm-vmess-ws, server: icook.tw, port: 443, type: vmess, uuid: b53e8ffe-4e0d-49d7-9f01-d074e105f75c, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/xmvws?ed=2048", ws-headers: {Host: xm.v001.gq}}
   - {name: 🇩🇪 德鸡J3-vmess-ws, server: icook.tw, port: 443, type: vmess, uuid: c31bbdb6-f40a-494c-b755-796cabe2acb2, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: "/j3vws?ed=2048", ws-headers: {Host: j3.v001.gq}}
   - {name: 🇩🇪 德鸡J3-trojan, server: j3.v001.gq, port: 443, type: trojan, password: c31bbdb6-f40a-494c-b755-796cabe2acb2, sni: j3.v001.gq}
@@ -75,6 +77,8 @@ proxy-groups:
       - 🇺🇸 凤凰城a3-vmess-digitalocean
       - 🇺🇸 凤凰城a3-trojan-ws
       - 🇺🇸 凤凰城a3-trojan-digitalocean
+      - 🇩🇪 德鸡yj-vmess-hostmonit
+      - 🇩🇪 德鸡yj-vmess-digitalocean
       - 🇩🇪 德鸡xm-vmess-ws
       - 🇩🇪 德鸡J3-vmess-ws
       - 🇩🇪 德鸡J3-trojan
@@ -116,6 +120,8 @@ proxy-groups:
       - 🇺🇸 凤凰城a3-vmess-digitalocean
       - 🇺🇸 凤凰城a3-trojan-ws
       - 🇺🇸 凤凰城a3-trojan-digitalocean
+      - 🇩🇪 德鸡yj-vmess-hostmonit
+      - 🇩🇪 德鸡yj-vmess-digitalocean
       - 🇩🇪 德鸡xm-vmess-ws
       - 🇩🇪 德鸡J3-vmess-ws
       - 🇩🇪 德鸡J3-trojan
