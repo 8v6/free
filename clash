@@ -28,8 +28,7 @@ proxies:
   - {name: 🇰🇷 首尔v-trojan, server: v.free8.ga, port: 34658, type: trojan, password: DzoBy35jKy, sni: v.free8.ga, skip-cert-verify: false}
   - {name: 🇰🇷 首尔v-vmess-ws, server: v.free8.ga, port: 33861, type: vmess, uuid: 4ec4eae3-4724-421e-832b-6fc018be2144, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /v, ws-headers: {Host: v.free8.ga}}
   - {name: 🇰🇷 首尔v1-trojan, server: v1.free8.ga, port: 443, type: trojan, password: 24551509-260d-4046-ba34-16b323ee7194, sni: v1.free8.ga, skip-cert-verify: false}
-  - {name: 🇰🇷 首尔v1-vmess, server: v1.free8.ga, port: 443, type: vmess, uuid: 24551509-260d-4046-ba34-16b323ee7194, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇰🇷 首尔v1-vmess-ws, server: v1.free8.ga, port: 443, type: vmess, uuid: 24551509-260d-4046-ba34-16b323ee7194, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/v1vws?ed=2048", ws-headers: {Host: v1.free8.ga}}
+  - {name: 🇰🇷 首尔v1-vmess-ws, server: v1.free8.ga, port: 443, type: vmess, uuid: 24551509-260d-4046-ba34-16b323ee7194, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: "/v1vws?ed=2048", ws-headers: {Host: v1.free8.ga}}
   - {name: 🇺🇸 Heroku-id8-vmess-icook-us, server: icook.tw, port: 443, type: vmess, uuid: 8f91b6a0-e8ee-11ea-adc1-0242ac886688, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /8f91b6a0-e8ee-11ea-adc1-0242ac886688-vmess, ws-headers: {Host: id8.free8id.workers.dev}}
   - {name: 🇺🇸 Heroku-vv6-vmess-icook-us, server: www.gov.hk, port: 443, type: vmess, uuid: 1a16e2fd-8601-4f13-a7a1-11c4b9e8e699, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /1a16e2fd-8601-4f13-a7a1-11c4b9e8e699-vmess, ws-headers: {Host: vv6.8v6.workers.dev}}
   - {name: 🇺🇸 凤凰城a3-trojan-digitalocean, server: www.digitalocean.com, port: 443, type: trojan, password: beed2e7f-9108-40f2-9616-66fab7489a15, sni: www.digitalocean.com, skip-cert-verify: false}
@@ -74,7 +73,6 @@ proxy-groups:
       - 🇰🇷 首尔v-trojan
       - 🇰🇷 首尔v-vmess-ws
       - 🇰🇷 首尔v1-trojan
-      - 🇰🇷 首尔v1-vmess
       - 🇰🇷 首尔v1-vmess-ws
       - 🇺🇸 Heroku-id8-vmess-icook-us
       - 🇺🇸 Heroku-vv6-vmess-icook-us
@@ -116,7 +114,6 @@ proxy-groups:
       - 🇰🇷 首尔v-trojan
       - 🇰🇷 首尔v-vmess-ws
       - 🇰🇷 首尔v1-trojan
-      - 🇰🇷 首尔v1-vmess
       - 🇰🇷 首尔v1-vmess-ws
       - 🇺🇸 Heroku-id8-vmess-icook-us
       - 🇺🇸 Heroku-vv6-vmess-icook-us
